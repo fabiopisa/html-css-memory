@@ -43,9 +43,10 @@ section{
   background-color: #FFFFFF;
   position: relative;
   border-radius: 15px;
-  box-shadow: 1px 2px 2px #7B8F95;
+  box-shadow: 2px 2px 3px #7B8F95;
   overflow: hidden;
   display:inline-block ;
+  text-align: center;
 }
 
 .margin{
@@ -62,14 +63,12 @@ section{
 
 .front span{
   color:#E61986 ;
-  position: absolute;
-  bottom: 4%;
-  left:10% ;
   font-size: 35px;
 }
 
 .front{
   visibility: hidden ;
+  height: 100%;
 }
 
 .side{
@@ -90,13 +89,28 @@ section{
   color:#E67919 ;
 }
 
+.card:hover{
+  cursor: pointer;
+}
+
 .visual{
   visibility: visible;
 }
+
 .no-visual{
   visibility: hidden;
 }
-section
+
+/* fine del sito */
+
+footer{
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer span{
+  font-size: 22px;
+}
 
 
 
