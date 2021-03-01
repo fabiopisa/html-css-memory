@@ -41,7 +41,6 @@ section{
   width: 23%;
   height: 240px;
   background-color: #FFFFFF;
-  position: relative;
   border-radius: 15px;
   box-shadow: 2px 2px 3px #7B8F95;
   overflow: hidden;
@@ -56,15 +55,13 @@ section{
 .front img{
   width: 95%;
   background-size: cover;
-  position: absolute;
-  top: 8%;
-  left: 5%;
+  margin-top: 25px;
 }
 
 .front span{
   color:#E61986 ;
   font-size: 35px;
-  line-height: 410px;
+  line-height: 30px;
 }
 
 .front{
