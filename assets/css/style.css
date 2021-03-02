@@ -7,6 +7,8 @@
 body{
   font-family: 'Nerko One', cursive;
   background-color:#ADD8E6 ;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 header, main, footer{
@@ -16,7 +18,6 @@ header, main, footer{
 
 /* titolo giocho */
 header{
-  text-align: center;
   margin-top: 10px;
 }
 
@@ -24,14 +25,9 @@ header h1{
   color: #ffffff;
   text-transform: uppercase;
   font-size: 85px;
-  text-shadow: 2px 2px #7B8F95;
 }
 
 /* corpo del sito con le carte */
-
-main{
-  text-shadow: 1px 1px #7B8F95;
-}
 
 section{
   margin-top: 20px;
@@ -41,11 +37,11 @@ section{
   width: 23%;
   height: 240px;
   background-color: #FFFFFF;
+  position: relative;
   border-radius: 15px;
-  box-shadow: 2px 2px 3px #7B8F95;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display:inline-block ;
-  text-align: center;
 }
 
 .margin{
@@ -59,27 +55,28 @@ section{
 }
 
 .front span{
+  position: absolute;
+  width: 100%;
   color:#E61986 ;
   font-size: 35px;
-  line-height: 30px;
-}
-
-.front{
-  visibility: hidden ;
-  height: 100%;
+  bottom: 5px;
+  left: 0px;
 }
 
 .side{
   height: 100%;
   background-image: url(../img/pattern.png);
-  background-repeat: repeat;
-  background-size: 90%;
+  background-size: contain;
 }
+
+.front.visual,
 .card:hover .front{
  visibility: visible;
 }
 
-.card:hover .side{
+.front,
+.card:hover .side,
+.no-visual{
   visibility:hidden;
  }
 
@@ -91,27 +88,12 @@ section{
   cursor: pointer;
 }
 
-.visual{
-  visibility: visible;
-}
-
-.no-visual{
-  visibility: hidden;
-}
-
 /* fine del sito */
 
 footer{
-  text-align: center;
   margin-top: 20px;
 }
 
 footer span{
   font-size: 22px;
 }
-
-
-
-
-
-
